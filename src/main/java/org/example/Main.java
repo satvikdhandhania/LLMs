@@ -12,7 +12,7 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Hello and welcome!");
 // Configures using the `OPENAI_API_KEY`, `OPENAI_ORG_ID` and `OPENAI_PROJECT_ID`
-// environment variables
+// environment variables on IntelliJ. Local file contains the org id
         OpenAIClient client = OpenAIOkHttpClient.fromEnv();
 
         ChatCompletionCreateParams params = ChatCompletionCreateParams.builder()
